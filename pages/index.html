@@ -28,7 +28,22 @@
     * WIDTH: style="width: 300px;"
     * BORDER: style="border: 2 px solid red"
     * DISPLAY: style="display: none"
+
+    ?Javascript per problema vh homepage:
     -->
+    <script>
+      function updateVH() {
+        const vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty("--vh", `${vh}px`);
+      }
+
+      // All’avvio
+      updateVH();
+
+      // Quando la finestra viene ridimensionata (es. ruoti il telefono)
+      window.addEventListener("resize", updateVH);
+    </script>
+
     <!-- HOMEPAGE -->
     <div class="home">
       <nav class="navbar">

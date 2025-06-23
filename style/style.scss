@@ -85,12 +85,12 @@ img {
 //? HOMEPAGE
 .home {
   display: flex;
-  flex-direction: column;justify-content: space-between;
-
-  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100dvh;
   overflow: hidden;
   border: 2px solid red;
-
+  height: calc(var(--vh) * 100); // al posto di 100vh o dvh
   .navbar {
     display: flex;
     align-items: center;

@@ -65,9 +65,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   border: 2px solid red;
+  height: calc(var(--vh) * 100);
 }
 .home .navbar {
   display: flex;
