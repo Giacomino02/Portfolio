@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Neue Machina";
+  src: url("/fonts/PPNeueMachina-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tt Hoves";
+  src: url("../fonts/TT Hoves Pro Trial Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: "tt Hoves", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #edf0f2;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Neue Machina";
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.linea {
+  background-color: #f0a81c;
+  height: 3px;
+  width: 100px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+  border: 2px solid red;
+}
+.home .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 0px;
+}
+.home .navbar .home-iconaenome {
+  display: flex;
+  align-items: center;
+}
+.home .navbar .home-iconaenome .home-icona {
+  width: 50px;
+}
+.home .navbar .home-iconaenome p {
+  color: #000000;
+  font-size: 18px;
+}
+.home .navbar .hamburger-closed {
+  display: flex;
+  flex-direction: column;
+}
+.home .navbar .hamburger-closed span {
+  width: 35px;
+  height: 2px;
+  background-color: #d03f00;
+  margin-top: 8px;
+}
+.home .home-main {
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.home .home-main h1 {
+  color: #000000;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 100;
+}
+.home .home-main .home-linea1 {
+  width: 80%;
+}
+.home .home-main p {
+  color: #000000;
+  font-size: 16px;
+}
+.home .home-main .home-button {
+  background-color: #f0a81c;
+  width: 40%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+.home .home-sotto {
+  display: flex;
+  justify-content: space-around;
+}
+.home .home-sotto .fumorosso {
+  width: 250px;
+  z-index: 1;
+}
+.home .home-sotto .home-linea2 {
+  height: 90%;
+  width: 3px;
+}
+.home .home-sotto .foto-io {
+  width: 300px;
+  z-index: 2;
+  margin-left: -250px;
+}
+
+@media (min-width: 768px) {
+  /* layout tablet */
+}
+@media (min-width: 1024px) {
+  /* layout desktop */
+}/*# sourceMappingURL=style.css.map */
